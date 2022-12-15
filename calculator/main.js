@@ -28,3 +28,4 @@ console.log(basicOperations("+", 4, 7));
 console.log(basicOperations("-", 15, 18));
 console.log(basicOperations("*", 5, 5));
 console.log(basicOperations("/", 49, 7));
+console.log(basicOperations("?", 49, 7));
