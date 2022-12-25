@@ -7,6 +7,7 @@ function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
+// Ternary
 const reverseStr = (str) => str.split("").reverse().join("");
 
 console.log(reverseString("Hello World"));
