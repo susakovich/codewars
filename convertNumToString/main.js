@@ -7,14 +7,7 @@
 // 999  --> "999"
 // -100 --> "-100"
 
-function numToString(num) {
-  if (num !== String) {
-    return String(num);
-  } else {
-    return num;
-  }
-}
-
+const numToString = (num) => (num !== String ? String(num) : num);
 console.log(typeof numToString(123));
 console.log(typeof numToString(999));
 console.log(typeof numToString(-100));
