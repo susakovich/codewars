@@ -6,13 +6,17 @@
 // makeNegative(0);    // return 0
 // makeNegative(0.12); // return -0.12
 
-const returnNegative = (num) => {
-  if (num > 0) {
-    return -num;
-  } else {
-    return num;
-  }
-};
+// Old way
+// const returnNegative = (num) => {
+//   if (num > 0) {
+//     return -num;
+//   } else {
+//     return num;
+//   }
+// };
+
+// Ternary
+const returnNegative = (num) => (num ? -num : num);
 
 console.log(returnNegative(1));
 console.log(returnNegative(-5));
