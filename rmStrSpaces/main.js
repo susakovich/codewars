@@ -4,4 +4,7 @@ function rmStringSpaces(str) {
   return str.split(" ").join("");
 }
 
-console.log(rmStringSpaces("Dad dooooooooo"));
+const rmStrSpaces = (str) => str.split(" ").join("");
+
+console.log(rmStringSpaces("Dado dooooooooo"));
+console.log(rmStrSpaces("Dado dooooooooo"));
