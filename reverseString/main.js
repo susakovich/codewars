@@ -7,4 +7,7 @@ function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
+const reverseStr = (str) => str.split("").reverse().join("");
+
 console.log(reverseString("Hello World"));
+console.log(reverseStr("world"));
