@@ -8,3 +8,6 @@ function stringRepeat(n, s) {
   return s.repeat(n);
 }
 console.log(stringRepeat(5, "Da"));
+
+const repeatString = (n, s) => s.repeat(n);
+console.log(repeatString(10, "Dalija"));
