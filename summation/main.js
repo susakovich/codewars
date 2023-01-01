@@ -16,3 +16,15 @@ const summation = function (num) {
 };
 
 console.log(summation(8));
+
+// forEach and arrow function
+const sumOfNums = (nums) => {
+  let sum = 0;
+
+  sum.forEach((e) => {
+    sum += e;
+  });
+  return sum;
+};
+
+console.log(summation(8));
