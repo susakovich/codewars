@@ -17,3 +17,10 @@ function findSmallestInt(args) {
 }
 
 console.log(findSmallestInt([242, 52, 51, 2, 5, -23]));
+
+// Ternary
+const findSmallest = (args) => {
+  return Math.min(...args);
+};
+
+console.log(findSmallest([34, 15, 88, 2]));
