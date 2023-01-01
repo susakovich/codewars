@@ -12,3 +12,16 @@ function squareSum(numbers) {
 }
 
 console.log(squareSum([1, 2, 2]));
+
+// forEach and arrow function solution
+const squareSumo = (nums) => {
+  let total = 0;
+
+  nums.forEach((n) => {
+    total += n ** 2;
+  });
+
+  return total;
+};
+
+console.log(squareSumo([1, 2, 2]));
