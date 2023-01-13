@@ -13,6 +13,6 @@ Round the result to 2 decimal places.
 If null value given then return -1 */
 
 excludingVatPrice = (price) =>
-  price === null ? -1 : +(price / 1.15).toFixed(2);
+  price === null ? -1 : Number(price / 1.15).toFixed(2);
 
 console.log(excludingVatPrice(230));
