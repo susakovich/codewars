@@ -20,3 +20,7 @@ function findOdd(arr) {
   return [...countMap].find(([num, count]) => count % 2 !== 0)[0];
 }
 console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
+
+// Much simpler way using reduce ( and bitwise XOR operation )
+const findOddTwo = (odd) => odd.reduce((a, b) => a ^ b);
+console.log(findOddTwo([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
