@@ -16,21 +16,26 @@ spinWords( "This is another test" )=> returns "This is rehtona test"
 // P: first we can split words into array, using map we can iterate to check for word length, if its more then five chars split, reverse and join it, else return word less then 5 words
 
 function spinWords(str) {
-  // Split the input string into an array of words
   const words = str.split(" ");
-
-  // Map over each word in the array
   const result = words.map((word) => {
-    // If the word has five or more letters, reverse it
     if (word.length >= 5) {
       return word.split("").reverse().join("");
     } else {
       return word;
     }
   });
-
-  // Join the array of words back into a string
   return result.join(" ");
 }
 
 console.log(spinWords("Hey fellow warriors"));
+
+// another way
+function spinWordsTwo(words) {
+  return words
+    .split(" ")
+    .map(function (word) {
+      return word.length > 4 ? word.split("").reverse().join("") : word;
+    })
+    .join(" ");
+}
+console.log(spinWordsTwo("Hey fellow warriors"));
