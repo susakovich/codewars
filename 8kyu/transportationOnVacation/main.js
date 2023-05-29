@@ -9,3 +9,15 @@ Every day you rent the car costs $40. If you rent the car for 7 or more days, yo
 Write a code that gives out the total amount for different days(d).
 
 */
+
+function rentalCarCost(d) {
+  let totalCost = d * 40; // Calculate the base cost for the given number of days
+
+  if (d >= 7) {
+    totalCost -= 50; // Apply $50 discount for rentals of 7 or more days
+  } else if (d >= 3) {
+    totalCost -= 20; // Apply $20 discount for rentals of 3 or more days
+  }
+
+  return totalCost;
+}
